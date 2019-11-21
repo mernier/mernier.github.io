@@ -2165,15 +2165,85 @@
 				background-image: url("../../images/banner.jpg");
 			}
 
+			#main > section.one2 {
+				background-color: #81918E;
+				background-image: url("../../images/banner2.jpg");
+			}
+
+			#main > section.one3 {
+				background-color: #81918E;
+				background-image: url("../../images/banner3.jpg");
+			}
+
+			#main > section.one4 {
+				background-color: #81918E;
+				background-image: url("../../images/banner4.jpg");
+			}
+
+			#main > section.one5 {
+				background-color: #81918E;
+				background-image: url("../../images/banner5.jpg");
+			}
+
+			#main > section.one6 {
+				background-color: #81918E;
+				background-image: url("../../images/banner6.jpg");
+			}
+
+			#main > section.one7 {
+				background-color: #81918E;
+				background-image: url("../../images/banner7.jpg");
+			}
+
+			#main > section.one8 {
+				background-color: #81918E;
+				background-image: url("../../images/banner8.jpg");
+			}
+
+			#main > section.one9 {
+				background-color: #81918E;
+				background-image: url("../../images/banner9.jpg");
+			}
+
+			#main > section.one10 {
+				background-color: #81918E;
+				background-image: url("../../images/banner10.jpg");
+			}
+
+			#main > section.one11 {
+				background-color: #81918E;
+				background-image: url("../../images/banner11.jpg");
+			}
+
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #FCFCFC;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #e8edec;
 			}
 
 			#main > section.four {
+				background-color: #FCFCFC;
+			}
+
+			#main > section.five {
+				background-color: #e8edec;
+			}
+
+			#main > section.six {
+				background-color: #FCFCFC;
+			}
+
+			#main > section.seven {
+				background-color: #e8edec;
+			}
+
+			#main > section.eight {
+				background-color: #FCFCFC;
+			}
+
+			#main > section.nine {
 				background-color: #e8edec;
 			}
 

@@ -47,7 +47,7 @@
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
 								<li><a href="#research" id="research-link" class="skel-layers-ignoreHref"><span class="icon fa-search">Research interests</span></a></li>
 								<li><a href="#CV" id="CV-link" class="skel-layers-ignoreHref"><span class="icon fa-graduation-cap">CV</span></a></li>
-								<li><a href="#Publications" id="CV-link" class="skel-layers-ignoreHref"><span class="icon fa-list-ul">Publications</span></a></li>
+								<li><a href="#publications" id="CV-link" class="skel-layers-ignoreHref"><span class="icon fa-list-ul">Publications</span></a></li>
 								<li><a href="#scripts" id="scripts-link" class="skel-layers-ignoreHref"><span class="icon fa-code">Scripts</span></a></li>
 								<li><a href="#thesis" id="thesis-link" class="skel-layers-ignoreHref"><span class="icon fa-book">Thesis</span></a></li>
 								<li><a href="#outreach" id="thesis-link" class="skel-layers-ignoreHref"><span class="icon fa-users">Outreach</span></a></li>								
@@ -71,7 +71,26 @@
 			<div id="main">
 
 				<!-- Intro -->
-					<section id="top" class="one dark cover">
+		<script>
+			var myArray = [
+			"one dark cover",
+			"one2 dark cover",
+			"one3 dark cover",
+			"one4 dark cover",
+			"one5 dark cover",
+			"one6 dark cover",
+			"one7 dark cover",
+			"one8 dark cover",
+			"one9 dark cover",
+			"one10 dark cover",
+			"one11 dark cover"
+			];
+
+		var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+		var htmlBlock = `<section id="top" class="${randomItem}">`
+		document.write(htmlBlock)
+		</script>
+			
 						<div class="container">
 
 							<header>
@@ -214,7 +233,7 @@
 
 
 				<!-- CV & Publications -->
-					<section id="Publications" class="four">
+					<section id="publications" class="four">
 						<div class="container">
 
 							<header>
@@ -388,10 +407,9 @@
 
 
 							<footer>
-								<a href="https://ui.adsabs.harvard.edu/public-libraries/DZcbEvVdSRuKNM8ZvkspNw" class="button scrolly">Full list of publications (ADS)</a> <br /> <br />
+								<a href="https://ui.adsabs.harvard.edu/public-libraries/DZcbEvVdSRuKNM8ZvkspNw" class="button scrolly">Full list of publications (online, ADS)</a> <br /> <br />
+								<a href="publications.pdf" class="button scrolly">Full list of publications (PDF)</a>
 							</footer>
-
-							<br/><br/>
 						</div>
 					</section>
 
@@ -431,7 +449,7 @@
 
 
 				<!-- Thesis -->
-					<section id="thesis" class="four">
+					<section id="thesis" class="six">
 						<div class="container">
 
 							<header>
@@ -478,7 +496,7 @@
 
 
 				<!-- About Me -->
-					<section id="about" class="four">
+					<section id="about" class="eight">
 						<div class="container">
 
 							<header>
@@ -534,6 +552,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
 
 
 	<!-- Default Statcounter code for Francoismernier.com https://www.francoismernier.com -->
