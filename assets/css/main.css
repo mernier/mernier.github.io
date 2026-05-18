@@ -2162,6 +2162,33 @@
 
 			section#top {
 				background-color: #81918E;
+
+				/*
+					We use this to create a new CSS positioning context. This
+					is necessary to properly position the semi-transparent
+					black layer to cover the top section of the page.
+				*/
+				position: relative;
+			}
+
+			/*
+				Create a semi-transparent black layer between
+				the white text and the background images.
+			*/
+			section#top::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			/*
+				Make sure the text of the header appears on
+				top of the semi-transparent black layer.
+			*/
+			section#top > .container {
+				position: relative;
+				z-index: 100;
 			}
 
 			#main > section.one1 {
