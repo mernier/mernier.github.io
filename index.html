@@ -16,6 +16,27 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<script src="https://kit.fontawesome.com/7d8121603f.js" crossorigin="anonymous"></script>
+
+		<script>
+			// Run this piece of script as soon as the HTML of the page is
+			// loaded, without having to wait for the external assets.
+			document.addEventListener('DOMContentLoaded', (e) => {
+				// Select the section at the top of the page.
+				let section = document.getElementById('top');
+
+				// Choose a random number in the given range.
+				let imageNumber = randomIntFromInterval(1, 11);
+
+				// Add the CSS class corresponding to this image
+				// to the HTML element of the top section.
+				section.classList.add('one' + imageNumber);
+			});
+
+			// Select a random integer in the range [min, max].
+			function randomIntFromInterval(min, max) {
+				return Math.floor(Math.random() * (max - min + 1) + min);
+			}
+		</script>
 	</head>
 	<body>
 
@@ -78,26 +99,7 @@
 			<div id="main">
 
 				<!-- Intro -->
-		<script>
-			var myArray = [
-			"one dark cover",
-			"one2 dark cover",
-			"one3 dark cover",
-			"one4 dark cover",
-			"one5 dark cover",
-			"one6 dark cover",
-			"one7 dark cover",
-			"one8 dark cover",
-			"one9 dark cover",
-			"one10 dark cover",
-			"one11 dark cover"
-			];
-
-		var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-		var htmlBlock = `<section id="top" class="${randomItem}">`
-		document.write(htmlBlock)
-		</script>
-			
+					<section id="top" class="dark cover">
 						<div class="container">
 
 							<header>
